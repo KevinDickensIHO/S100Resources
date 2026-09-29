@@ -1,48 +1,46 @@
-### First tabs
+<!-- Tab Headers -->
+<div class="tab-container">
+  <button class="tab-button active" onclick="switchTab(event, 'tab1')">Tab 1</button>
+  <button class="tab-button" onclick="switchTab(event, 'tab2')">Tab 2</button>
+</div>
 
-{% tabs log %}
+<!-- Tab Content -->
+<div id="tab1" class="tab-content" style="display: block;">
+  <h3>Content Header 1</h3>
+  <p>This is the content for your first tab panel.</p>
+</div>
 
-{% tab log php %}
-```php
-var_dump('hello');
-```
-{% endtab %}
+<div id="tab2" class="tab-content" style="display: none;">
+  <h3>Content Header 2</h3>
+  <p>This is the content for your second tab panel.</p>
+</div>
 
-{% tab log js %}
-```javascript
-console.log('hello');
-```
-{% endtab %}
-
-{% tab log ruby %}
-```javascript
-pputs 'hello'
-```
-{% endtab %}
-
-{% endtabs %}
-
-### Second tabs
-
-{% tabs data-struct %}
-
-{% tab data-struct yaml %}
-```yaml
-hello:
-  - 'whatsup'
-  - 'hi'
-```
-{% endtab %}
-
-{% tab data-struct json %}
-```json
-{
-    "hello": ["whatsup", "hi"]
+<!-- Tab Script -->
+<script>
+function switchTab(evt, tabId) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tab-content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tab-button");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(tabId).style.display = "block";
+  evt.currentTarget.className += " active";
 }
-```
-{% endtab %}
+</script>
 
-{% endtabs %}
+<!-- Simple CSS Styling -->
+<style>
+.tab-container { overflow: hidden; border-bottom: 1px solid #ccc; }
+.tab-button { background-color: #f1f1f1; float: left; border: none; outline: none; cursor: pointer; padding: 10px 16px; transition: 0.3s; font-size: 14px; }
+.tab-button:hover { background-color: #ddd; }
+.tab-button.active { background-color: #ccc; font-weight: bold; }
+.tab-content { padding: 12px; border: 1px solid #ccc; border-top: none; }
+</style>
+
 <p align="center">
  <img src="https://iho.int/uploads/user/JPG/logo/IHO_Logo_RGB_Complete_EN.png" alt="IHO S-100 Resourcet" width="210" height="70">
  </p>
