@@ -1,3 +1,48 @@
+### First tabs
+
+{% tabs log %}
+
+{% tab log php %}
+```php
+var_dump('hello');
+```
+{% endtab %}
+
+{% tab log js %}
+```javascript
+console.log('hello');
+```
+{% endtab %}
+
+{% tab log ruby %}
+```javascript
+pputs 'hello'
+```
+{% endtab %}
+
+{% endtabs %}
+
+### Second tabs
+
+{% tabs data-struct %}
+
+{% tab data-struct yaml %}
+```yaml
+hello:
+  - 'whatsup'
+  - 'hi'
+```
+{% endtab %}
+
+{% tab data-struct json %}
+```json
+{
+    "hello": ["whatsup", "hi"]
+}
+```
+{% endtab %}
+
+{% endtabs %}
 <p align="right">
  <img src="https://iho.int/uploads/user/JPG/logo/IHO_Logo_RGB_Complete_EN.png" alt="IHO S-100 Resourcet" width="210" height="70">
  </p>
