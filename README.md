@@ -43,7 +43,7 @@ hello:
 {% endtab %}
 
 {% endtabs %}
-<p align="right">
+<p align="center">
  <img src="https://iho.int/uploads/user/JPG/logo/IHO_Logo_RGB_Complete_EN.png" alt="IHO S-100 Resourcet" width="210" height="70">
  </p>
 ### Introduction
