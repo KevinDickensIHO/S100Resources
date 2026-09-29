@@ -108,15 +108,6 @@
 </html>
 
 
-<!-- Simple CSS Styling -->
-<style>
-.tab-container { overflow: hidden; border-bottom: 1px solid #ccc; }
-.tab-button { background-color: #f1f1f1; float: left; border: none; outline: none; cursor: pointer; padding: 10px 16px; transition: 0.3s; font-size: 14px; }
-.tab-button:hover { background-color: #ddd; }
-.tab-button.active { background-color: #ccc; font-weight: bold; }
-.tab-content { padding: 12px; border: 1px solid #ccc; border-top: none; }
-</style>
-
 <p align="center">
  <img src="https://iho.int/uploads/user/JPG/logo/IHO_Logo_RGB_Complete_EN.png" alt="IHO S-100 Resourcet" width="210" height="70">
  </p>
