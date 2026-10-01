@@ -7,11 +7,10 @@ permalink: /
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Page Tabs</title>
-...
   <style>
     /* Container layout */
     .tab-container {
-      max-width: 600px;
+      max-width: 1200px; /* Expanded slightly to fit S-100 tables cleanly */
       margin: 50px auto;
       font-family: Arial, sans-serif;
     }
@@ -73,17 +72,20 @@ permalink: /
       <button class="tab-btn" onclick="switchTab(event, 'tab-phase2')">Phase 2 Products</button>
     </div>
 
-    <!-- Tab Content Panels using Jekyll Includes-->
-    <div id="tab-S-100" class="tab-panel active" markdown="1">
-{% include S-100.md | markdownify %}
+    <!-- Tab Content Panels using Jekyll Includes -->
+    <div id="tab-S-100" class="tab-panel active">
+      {% capture s100_content %}{% include S-100.md %}{% endcapture %}
+      {{ s100_content | markdownify }}
     </div>
 
-    <div id="tab-phase1" class="tab-panel" markdown="1">
-{% include phase1-products.md | markdownify %}
+    <div id="tab-phase1" class="tab-panel">
+      {% capture phase1_content %}{% include phase1-products.md %}{% endcapture %}
+      {{ phase1_content | markdownify }}
     </div>
 
-    <div id="tab-phase2" class="tab-panel" markdown="1">
-{% include phase2-products.md | markdownify %}
+    <div id="tab-phase2" class="tab-panel">
+      {% capture phase2_content %}{% include phase2-products.md %}{% endcapture %}
+      {{ phase2_content | markdownify }}
     </div>
   </div>
 
