@@ -97,6 +97,7 @@ permalink: /
       <button class="tab-btn active" onclick="switchTab(event, 'tab-S-100')">S-100 Resources</button>
       <button class="tab-btn" onclick="switchTab(event, 'tab-phase1')">Phase 1 Products</button>
       <button class="tab-btn" onclick="switchTab(event, 'tab-phase2')">Phase 2 Products</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-phase3')">Phase 3 Products</button>
     </div>
 
     <!-- Tab Content Panels using Jekyll Includes -->
@@ -113,6 +114,11 @@ permalink: /
     <div id="tab-phase2" class="tab-panel">
       {% capture phase2_content %}{% include phase2-products.md %}{% endcapture %}
       {{ phase2_content | markdownify }}
+    </div>
+
+    <div id="tab-phase3" class="tab-panel active">
+      {% capture phase3_content %}{% include phase3-products.md %}{% endcapture %}
+      {{ phase3_content | markdownify }}
     </div>
   </div>
 
