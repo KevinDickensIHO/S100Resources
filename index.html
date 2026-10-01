@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,25 +66,22 @@
   <div class="tab-container">
     <!-- Tab Navigation Headers -->
     <div class="tab-menu">
-      <button class="tab-btn active" onclick="switchTab(event, 'tab-home')">Home</button>
-      <button class="tab-btn" onclick="switchTab(event, 'tab-profile')">Profile</button>
-      <button class="tab-btn" onclick="switchTab(event, 'tab-settings')">Settings</button>
+      <button class="tab-btn active" onclick="switchTab(event, 'tab-home')">S-100 Resources</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-profile')">Phase 1 Products</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-settings')">Phase 2 Products</button>
     </div>
 
-    <!-- Tab Content Panels -->
-    <div id="tab-home" class="tab-panel active">
-      <h3>Home Panel</h3>
-      <p>Welcome to the home page tab content.</p>
+    <!-- Tab Content Panels using Jekyll Includes-->
+    <div id="tab-home" class="tab-panel active" markdown="1">
+{% include S-100.md %}
     </div>
 
-    <div id="tab-profile" class="tab-panel">
-      <h3>Profile Panel</h3>
-      <p>Manage your profile settings and information here.</p>
+    <div id="tab-profile" class="tab-panel" markdown="1">
+{% include phase1-products.md %}
     </div>
 
-    <div id="tab-settings" class="tab-panel">
-      <h3>Settings Panel</h3>
-      <p>Customize your account features and configurations.</p>
+    <div id="tab-settings" class="tab-panel" markdown="1">
+{% include phase-2=products.md %}
     </div>
   </div>
 
