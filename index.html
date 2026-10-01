@@ -60,6 +60,31 @@ permalink: /
     .tab-panel.active {
       display: block;
     }
+
+        /* Table Styling for Markdown Content */
+    .tab-panel table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 16px;
+      text-align: left;
+    }
+
+    .tab-panel th, .tab-panel td {
+      border: 1px solid #ccc;
+      padding: 12px;
+    }
+
+    /* Adds a subtle gray background to header rows */
+    .tab-panel th {
+      background-color: #f8f9fa;
+      font-weight: bold;
+    }
+
+    /* Alternating row colors for readability (Zebra striping) */
+    .tab-panel tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
   </style>
 </head>
 <body>
