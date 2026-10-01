@@ -68,21 +68,21 @@ permalink: /
   <div class="tab-container">
     <!-- Tab Navigation Headers -->
     <div class="tab-menu">
-      <button class="tab-btn active" onclick="switchTab(event, 'tab-home')">S-100 Resources</button>
-      <button class="tab-btn" onclick="switchTab(event, 'tab-profile')">Phase 1 Products</button>
-      <button class="tab-btn" onclick="switchTab(event, 'tab-settings')">Phase 2 Products</button>
+      <button class="tab-btn active" onclick="switchTab(event, 'tab-S-100')">S-100 Resources</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-phase1')">Phase 1 Products</button>
+      <button class="tab-btn" onclick="switchTab(event, 'tab-phase2')">Phase 2 Products</button>
     </div>
 
     <!-- Tab Content Panels using Jekyll Includes-->
-    <div id="tab-home" class="tab-panel active" markdown="1">
+    <div id="tab-S-100" class="tab-panel active" markdown="1">
 {% include S-100.md | markdownify %}
     </div>
 
-    <div id="tab-profile" class="tab-panel" markdown="1">
+    <div id="tab-phase1" class="tab-panel" markdown="1">
 {% include phase1-products.md | markdownify %}
     </div>
 
-    <div id="tab-settings" class="tab-panel" markdown="1">
+    <div id="tab-phase2" class="tab-panel" markdown="1">
 {% include phase2-products.md | markdownify %}
     </div>
   </div>
