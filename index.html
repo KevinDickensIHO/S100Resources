@@ -75,15 +75,15 @@ permalink: /
 
     <!-- Tab Content Panels using Jekyll Includes-->
     <div id="tab-home" class="tab-panel active" markdown="1">
-{% include S-100.md %}
+{% include S-100.md | markdownify %}
     </div>
 
     <div id="tab-profile" class="tab-panel" markdown="1">
-{% include phase1-products.md %}
+{% include phase1-products.md | markdownify %}
     </div>
 
     <div id="tab-settings" class="tab-panel" markdown="1">
-{% include phase2-products.md %}
+{% include phase2-products.md | markdownify %}
     </div>
   </div>
 
