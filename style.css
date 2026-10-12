@@ -1,11 +1,11 @@
   <style>
      /* Hide all tab contents by default */
-    .tab-content {
+    .tab-panel {
         display: none;
     }
     
     /* Only show the content if it has the active class */
-    .tab-content.active {
+    .tab-panel.active {
         display: block;
     }
     /* Container layout */
