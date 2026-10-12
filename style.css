@@ -1,0 +1,9 @@
+/* Hide all tab contents by default */
+.tab-content {
+    display: none;
+}
+
+/* Only show the content if it has the active class */
+.tab-content.active {
+    display: block;
+}
